@@ -1,2 +1,4 @@
-class Dealer < Player
+module Blackjack
+  class Dealer < Player
+  end
 end

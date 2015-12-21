@@ -1,2 +1,4 @@
-class Board
+module Blackjack
+  class Board
+  end
 end
