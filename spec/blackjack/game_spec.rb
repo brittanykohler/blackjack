@@ -3,7 +3,7 @@ require 'spec_helper'
 describe Blackjack::Game do
   before :each do
     @game = Blackjack::Game.new
-    @player = Blackjack::Player.new
+    @player = Blackjack::Player.new(@game)
   end
 
   describe "initialize" do
@@ -24,6 +24,12 @@ describe Blackjack::Game do
       @game.hit(@player)
       expect(@player.hand.count).to eq 1
     end
+  end
 
+  describe "stand" do
+    it "changes the stand variable to true" do
+      @game.stand(@player)
+      expect()
+    end
   end
 end

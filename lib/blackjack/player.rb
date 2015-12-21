@@ -1,9 +1,10 @@
 module Blackjack
   class Player
-    attr_accessor :hand
+    attr_accessor :hand, :game
 
-    def initialize()
+    def initialize(game)
       @hand = Hand.new
+      @game = game
     end
 
     def has_ace?

@@ -2,7 +2,8 @@ require 'spec_helper'
 
 describe Blackjack::Player do
   before :each do
-    @player = Blackjack::Player.new
+    @game = Blackjack::Game.new
+    @player = Blackjack::Player.new(@game)
     @ace = Card.new(rank="Ace")
     @jack = Card.new(rank="Jack")
     @two = Card.new(rank = 2)
