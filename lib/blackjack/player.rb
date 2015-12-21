@@ -28,7 +28,7 @@ module Blackjack
     end
 
     def blackjack?
-
+      return get_points == 21 && has_ace?
     end
   end
 end

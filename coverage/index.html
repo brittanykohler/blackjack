@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-12-21T14:25:33-08:00">2015-12-21T14:25:33-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-12-21T14:28:20-08:00">2015-12-21T14:28:20-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.62
+         1.94
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>8</b> files in total.
-    <b>78</b> relevant lines. 
-    <span class="green"><b>78</b> lines covered</span> and
+    <b>79</b> relevant lines. 
+    <span class="green"><b>79</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -94,10 +94,10 @@
         <td class="strong"><a href="#dd719637a18243e20babd3e0e016c8d466bcd7f6" class="src_link" title="lib/blackjack/player.rb">lib/blackjack/player.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>34</td>
-        <td>18</td>
-        <td>18</td>
+        <td>19</td>
+        <td>19</td>
         <td>0</td>
-        <td>2.3</td>
+        <td>3.6</td>
       </tr>
       
       <tr>
@@ -391,8 +391,8 @@
     <h3>lib/blackjack/player.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>18</b> relevant lines. 
-      <span class="green"><b>18</b> lines covered</span> and
+      <b>19</b> relevant lines. 
+      <span class="green"><b>19</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -454,8 +454,8 @@
           <code class="ruby">    def has_ace?</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="10">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="10" data-linenumber="10">
+          <span class="hits">10</span>
           
           <code class="ruby">      (@hand.any? { |card| card.to_i == 14 }) ? (true) : (false)</code>
         </li>
@@ -484,32 +484,32 @@
           <code class="ruby">    def get_points</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="15">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="15">
+          <span class="hits">4</span>
           
           <code class="ruby">      points = 0</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="16">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="16">
+          <span class="hits">4</span>
           
           <code class="ruby">      @hand.each do |card|</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="17">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="9" data-linenumber="17">
+          <span class="hits">9</span>
           
           <code class="ruby">        value = card.to_i</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="18">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="9" data-linenumber="18">
+          <span class="hits">9</span>
           
           <code class="ruby">        if value &lt;= 10</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="19">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="19">
+          <span class="hits">2</span>
           
           <code class="ruby">          points += value</code>
         </li>
@@ -520,8 +520,8 @@
           <code class="ruby">        elsif value &gt; 10 &amp;&amp; value &lt; 14</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="21">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="21">
+          <span class="hits">3</span>
           
           <code class="ruby">          points += 10</code>
         </li>
@@ -532,8 +532,8 @@
           <code class="ruby">        else</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="23">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="23">
+          <span class="hits">4</span>
           
           <code class="ruby">          points += 11</code>
         </li>
@@ -550,14 +550,14 @@
           <code class="ruby">      end</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="26">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="26">
+          <span class="hits">4</span>
           
           <code class="ruby">      points -= 10 if has_ace? &amp;&amp; points &gt; 21</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="27">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="27">
+          <span class="hits">4</span>
           
           <code class="ruby">      return points</code>
         </li>
@@ -580,10 +580,10 @@
           <code class="ruby">    def blackjack?</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="31">
+        <li class="covered" data-hits="2" data-linenumber="31">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">      return get_points == 21 &amp;&amp; has_ace?</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="32">
