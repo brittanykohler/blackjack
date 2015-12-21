@@ -1,5 +1,7 @@
 module Blackjack
   class Game
+    attr_accessor :deck
+
     def initialize
       @deck = Deck.new
       @deck.shuffle!
@@ -9,9 +11,7 @@ module Blackjack
       player.hand.draw(@deck, 2)
     end
 
-    def hit(player)
-      player.hand.draw(@deck, 1)
-    end
+
 
   end
 end

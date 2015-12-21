@@ -11,7 +11,6 @@ module Blackjack
       (@hand.any? { |card| card.to_i == 14 }) ? (true) : (false)
     end
 
-
     def get_points
       points = 0
       @hand.each do |card|
@@ -34,6 +33,10 @@ module Blackjack
 
     def bust?
       return get_points > 21
+    end
+
+    def hit
+      @hand.draw(@game.deck, 1)
     end
 
   end

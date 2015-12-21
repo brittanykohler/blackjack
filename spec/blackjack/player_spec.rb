@@ -58,5 +58,19 @@ describe Blackjack::Player do
     end
   end
 
+  describe "hit" do
+    it "adds a card to the player's hand" do
+      @player.hit
+      expect(@player.hand.count).to eq 1
+    end
+  end
+
+  describe "stand" do
+    it "changes the stand variable to true" do
+      @player.stand
+      expect()
+    end
+  end
+
 
 end
