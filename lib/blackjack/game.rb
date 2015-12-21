@@ -14,6 +14,13 @@ module Blackjack
     end
 
     def play_game
+      @dealer.deal_hand(@dealer)
+      @dealer.deal_hand(@player)
+      if @dealer.blackjack?
+        puts "Dealer had blackjack! You lose :("
+      elsif @player.blackjack?
+        puts "You had blackjack! You win! :)"
+      end
     end
   end
 end
