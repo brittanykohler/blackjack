@@ -50,7 +50,6 @@ module Blackjack
       while input != "h" || input != "s"
         puts "Press h for hit and s for stand"
         input = gets.chomp.downcase.strip
-        binding.pry
         if input == "h"
           return hit
         elsif input == "s"
