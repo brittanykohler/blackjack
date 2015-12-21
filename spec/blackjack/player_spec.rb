@@ -33,12 +33,12 @@ describe Blackjack::Player do
     it "returns true if the hand has blackjack" do
       @player.hand << @ace
       @player.hand << @jack
-      expect(@player.blackjack?).to be_true
+      expect(@player.blackjack?).to be true
     end
     it "returns false if the hand doesn't have blackjack" do
       @player.hand << @ace
       @player.hand << @two
-      expect(@player.blackjack?).to be_false
+      expect(@player.blackjack?).to be false
     end
   end
 end
