@@ -41,4 +41,18 @@ describe Blackjack::Player do
       expect(@player.blackjack?).to be false
     end
   end
+
+  describe "#bust?" do
+    it "returns true if the hand is busted" do
+      @player.hand << @jack
+      @player.hand << @jack
+      @player.hand << @seven
+      expect(@player.bust?).to be true
+    end
+    it "returns false if the hand isn't busted" do
+      @player.hand << @jack
+      @player.hand << @jack
+      expect(@player.bust?).to be true
+    end
+  end
 end
