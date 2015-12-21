@@ -11,11 +11,4 @@ describe Blackjack::Game do
       expect(@game).to be_an_instance_of Blackjack::Game
     end
   end
-
-  describe "#deal_hand" do
-    it "deals 2 cards" do
-      @game.deal_hand(@player)
-      expect(@player.hand.count).to eq 2
-    end
-  end
 end

@@ -26,4 +26,11 @@ describe Blackjack::Dealer do
       expect(@dealer.hand.count).to eq 3
     end
   end
+
+  describe "#deal_hand" do
+    it "deals 2 cards" do
+      @dealer.deal_hand(@dealer)
+      expect(@dealer.hand.count).to eq 2
+    end
+  end
 end
