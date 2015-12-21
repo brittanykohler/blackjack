@@ -18,4 +18,12 @@ describe Blackjack::Game do
       expect(@player.hand.count).to eq 2
     end
   end
+
+  describe "hit" do
+    it "adds a card to the player's hand" do
+      @game.hit(@player)
+      expect(@player.hand.count).to eq 1
+    end
+
+  end
 end

@@ -7,6 +7,7 @@ describe Blackjack::Player do
     @jack = Card.new(rank="Jack")
     @two = Card.new(rank = 2)
     @seven = Card.new(rank = 7)
+    @queen = Card.new(rank = "Queen")
   end
 
   describe "initialize" do
@@ -52,7 +53,9 @@ describe Blackjack::Player do
     it "returns false if the hand isn't busted" do
       @player.hand << @jack
       @player.hand << @jack
-      expect(@player.bust?).to be true
+      expect(@player.bust?).to be false
     end
   end
+
+
 end
