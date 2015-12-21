@@ -1,0 +1,79 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/Brittany/Desktop/git/projects/Ada/project-forks/blackjack/lib/blackjack.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1
+      ],
+      "/Users/Brittany/Desktop/git/projects/Ada/project-forks/blackjack/lib/blackjack/board.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Brittany/Desktop/git/projects/Ada/project-forks/blackjack/lib/blackjack/player.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/Brittany/Desktop/git/projects/Ada/project-forks/blackjack/lib/blackjack/dealer.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Brittany/Desktop/git/projects/Ada/project-forks/blackjack/lib/blackjack/game.rb": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/Brittany/Desktop/git/projects/Ada/project-forks/blackjack/spec/blackjack/dealer_spec.rb": [
+        1
+      ],
+      "/Users/Brittany/Desktop/git/projects/Ada/project-forks/blackjack/spec/blackjack/game_spec.rb": [
+        1
+      ],
+      "/Users/Brittany/Desktop/git/projects/Ada/project-forks/blackjack/spec/blackjack/player_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1450729727
+  }
+}

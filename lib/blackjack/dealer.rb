@@ -1,4 +1,4 @@
 module Blackjack
-  class Dealer < Player
+  class Dealer < Blackjack::Player
   end
 end
