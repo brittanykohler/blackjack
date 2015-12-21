@@ -11,3 +11,4 @@ deck.shuffle!
 hand.draw(deck, 2)
 
 puts hand
+binding.pry

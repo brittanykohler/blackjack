@@ -17,13 +17,17 @@ describe Blackjack::Player do
 
   describe "#get_points" do
     before :each do
-      ace = Card.new(rank="Ace")
-      jack = Card.new(rank="Jack")
-      @player.hand << ace
-      @player.hand << jack
+      @ace = Card.new(rank="Ace")
+      @jack = Card.new(rank="Jack")
+      @two = Card.new(rank = 2)
+      @seven = Card.new(rank = 7)
     end
     it "returns the number of points in hand" do
+      @player.hand << @ace
+      @player.hand << @jack
       expect(@player.get_points).to eq 21
+      @player.hand << @two
+      expect(@player.get_points).to eq 13
     end
   end
 end

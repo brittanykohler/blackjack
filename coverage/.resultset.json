@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/desireepoland/Ada/project-masters/blackjack/lib/blackjack.rb": [
+      "/Users/jennie/Dropbox/Ada/class_exercises/week12/blackjack/lib/blackjack.rb": [
         1,
         1,
         1,
@@ -11,13 +11,13 @@
         1,
         1
       ],
-      "/Users/desireepoland/Ada/project-masters/blackjack/lib/blackjack/board.rb": [
+      "/Users/jennie/Dropbox/Ada/class_exercises/week12/blackjack/lib/blackjack/board.rb": [
         1,
         1,
         null,
         null
       ],
-      "/Users/desireepoland/Ada/project-masters/blackjack/lib/blackjack/player.rb": [
+      "/Users/jennie/Dropbox/Ada/class_exercises/week12/blackjack/lib/blackjack/player.rb": [
         1,
         1,
         1,
@@ -27,7 +27,24 @@
         null,
         null,
         1,
+        4,
         null,
+        null,
+        null,
+        1,
+        2,
+        2,
+        5,
+        5,
+        1,
+        null,
+        2,
+        null,
+        2,
+        null,
+        null,
+        2,
+        2,
         null,
         null,
         1,
@@ -36,13 +53,13 @@
         null,
         null
       ],
-      "/Users/desireepoland/Ada/project-masters/blackjack/lib/blackjack/dealer.rb": [
+      "/Users/jennie/Dropbox/Ada/class_exercises/week12/blackjack/lib/blackjack/dealer.rb": [
         1,
         1,
         null,
         null
       ],
-      "/Users/desireepoland/Ada/project-masters/blackjack/lib/blackjack/game.rb": [
+      "/Users/jennie/Dropbox/Ada/class_exercises/week12/blackjack/lib/blackjack/game.rb": [
         1,
         1,
         1,
@@ -56,10 +73,10 @@
         null,
         null
       ],
-      "/Users/desireepoland/Ada/project-masters/blackjack/spec/blackjack/dealer_spec.rb": [
+      "/Users/jennie/Dropbox/Ada/class_exercises/week12/blackjack/spec/blackjack/dealer_spec.rb": [
         1
       ],
-      "/Users/desireepoland/Ada/project-masters/blackjack/spec/blackjack/game_spec.rb": [
+      "/Users/jennie/Dropbox/Ada/class_exercises/week12/blackjack/spec/blackjack/game_spec.rb": [
         1,
         null,
         1,
@@ -82,7 +99,7 @@
         null,
         null
       ],
-      "/Users/desireepoland/Ada/project-masters/blackjack/spec/blackjack/player_spec.rb": [
+      "/Users/jennie/Dropbox/Ada/class_exercises/week12/blackjack/spec/blackjack/player_spec.rb": [
         1,
         null,
         1,
@@ -109,11 +126,15 @@
         null,
         1,
         1,
+        1,
+        1,
+        1,
+        1,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1450735626
+    "timestamp": 1450736471
   }
 }
