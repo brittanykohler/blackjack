@@ -46,14 +46,16 @@ module Blackjack
 
     def make_move
       input = nil
-      while ["h", "s"].include?(input)
+      # while ["h", "s"].include?(input)
+      while input != "h" || input != "s"
         puts "Press h for hit and s for stand"
         input = gets.chomp.downcase.strip
-      end
-      if input == "h"
-        hit
-      else
-        stand
+        binding.pry
+        if input == "h"
+          return hit
+        elsif input == "s"
+          return stand
+        end
       end
     end
   end
