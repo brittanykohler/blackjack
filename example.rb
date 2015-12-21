@@ -8,6 +8,6 @@ deck = Deck.new
 
 deck.shuffle!
 
-hand.draw(deck, 5)
+hand.draw(deck, 2)
 
 puts hand
