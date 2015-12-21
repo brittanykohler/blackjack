@@ -3,6 +3,10 @@ require 'spec_helper'
 describe Blackjack::Player do
   before :each do
     @player = Blackjack::Player.new
+    @ace = Card.new(rank="Ace")
+    @jack = Card.new(rank="Jack")
+    @two = Card.new(rank = 2)
+    @seven = Card.new(rank = 7)
   end
 
   describe "initialize" do
@@ -16,18 +20,25 @@ describe Blackjack::Player do
   end
 
   describe "#get_points" do
-    before :each do
-      @ace = Card.new(rank="Ace")
-      @jack = Card.new(rank="Jack")
-      @two = Card.new(rank = 2)
-      @seven = Card.new(rank = 7)
-    end
     it "returns the number of points in hand" do
       @player.hand << @ace
       @player.hand << @jack
       expect(@player.get_points).to eq 21
       @player.hand << @two
       expect(@player.get_points).to eq 13
+    end
+  end
+
+  describe "#blackjack?" do
+    it "returns true if the hand has blackjack" do
+      @player.hand << @ace
+      @player.hand << @jack
+      expect(@player.blackjack?).to be_true
+    end
+    it "returns false if the hand doesn't have blackjack" do
+      @player.hand << @ace
+      @player.hand << @two
+      expect(@player.blackjack?).to be_false
     end
   end
 end
