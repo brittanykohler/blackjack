@@ -4,5 +4,9 @@ module Blackjack
       @deck = Deck.new
       @deck.shuffle!
     end
+
+    def deal_hand(player)
+      player.hand.draw(@deck, 2)
+    end
   end
 end
