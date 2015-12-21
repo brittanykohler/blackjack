@@ -68,9 +68,7 @@ describe Blackjack::Player do
   describe "stand" do
     it "changes the stand variable to true" do
       @player.stand
-      expect()
+      expect(@player.stand_status).to be true
     end
   end
-
-
 end

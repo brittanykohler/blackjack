@@ -1,10 +1,11 @@
 module Blackjack
   class Player
-    attr_accessor :hand, :game
+    attr_accessor :hand, :game, :stand_status
 
     def initialize(game)
       @hand = Hand.new
       @game = game
+      @stand_status = false
     end
 
     def has_ace?
@@ -39,5 +40,8 @@ module Blackjack
       @hand.draw(@game.deck, 1)
     end
 
+    def stand
+      @stand_status = true
+    end
   end
 end

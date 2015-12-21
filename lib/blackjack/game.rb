@@ -10,8 +10,5 @@ module Blackjack
     def deal_hand(player)
       player.hand.draw(@deck, 2)
     end
-
-
-
   end
 end
