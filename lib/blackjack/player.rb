@@ -43,5 +43,18 @@ module Blackjack
     def stand
       @stand_status = true
     end
+
+    def make_move
+      input = nil
+      while ["h", "s"].include?(input)
+        puts "Press h for hit and s for stand"
+        input = gets.chomp.downcase.strip
+      end
+      if input == "h"
+        hit
+      else
+        stand
+      end
+    end
   end
 end

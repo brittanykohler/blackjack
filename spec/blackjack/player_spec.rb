@@ -71,4 +71,10 @@ describe Blackjack::Player do
       expect(@player.stand_status).to be true
     end
   end
+
+  describe "make_move" do
+    it "does things" do
+      @player.make_move
+    end
+  end
 end
