@@ -14,4 +14,16 @@ describe Blackjack::Player do
       expect(@player.hand).to be_an_instance_of RubyCards::Hand
     end
   end
+
+  describe "#get_points" do
+    before :each do
+      ace = Card.new(rank="Ace")
+      jack = Card.new(rank="Jack")
+      @player.hand << ace
+      @player.hand << jack
+    end
+    it "returns the number of points in hand" do
+      expect(@player.get_points).to eq 21
+    end
+  end
 end

@@ -5,5 +5,13 @@ module Blackjack
     def initialize()
       @hand = Hand.new
     end
+
+    def get_points
+      
+    end
+
+    def blackjack?
+
+    end
   end
 end
