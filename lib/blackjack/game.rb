@@ -15,9 +15,9 @@ module Blackjack
     end
 
     def declare_winner
-      if @player.get_points > @dealer.get_points && !@player.bust?
+      if @player.get_points > @dealer.get_points && !@player.bust? || @dealer.bust?
         return "Player"
-      elsif @player.get_points < @dealer.get_points && !@dealer.bust?
+      elsif @player.get_points < @dealer.get_points && !@dealer.bust? || @player.bust?
         return "Dealer"
       else
         return "Tie"
