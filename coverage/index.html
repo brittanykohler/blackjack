@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.10.0/application.js' type='text/javascript'></script>    
     <link href='./assets/0.10.0/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/png" href="./assets/0.10.0/favicon_red.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.10.0/favicon_yellow.png" />
     <link rel="icon" type="image/png" href="./assets/0.10.0/favicon.png" />
   </head>
   
@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-12-21T19:52:11-08:00">2015-12-21T19:52:11-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-12-21T19:57:53-08:00">2015-12-21T19:57:53-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">75.53%</span></span>
+    (<span class="covered_percent"><span class="yellow">80.1%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.79
+         3.02
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>7</b> files in total.
-    <b>188</b> relevant lines. 
-    <span class="green"><b>142</b> lines covered</span> and
-    <span class="red"><b>46</b> lines missed </span>
+    <b>196</b> relevant lines. 
+    <span class="green"><b>157</b> lines covered</span> and
+    <span class="red"><b>39</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -57,7 +57,7 @@
         <td>14</td>
         <td>7</td>
         <td>7</td>
-        <td>1.4</td>
+        <td>1.5</td>
       </tr>
       
       <tr>
@@ -67,7 +67,7 @@
         <td>10</td>
         <td>10</td>
         <td>0</td>
-        <td>2.6</td>
+        <td>2.8</td>
       </tr>
       
       <tr>
@@ -77,17 +77,17 @@
         <td>45</td>
         <td>13</td>
         <td>32</td>
-        <td>1.6</td>
+        <td>1.8</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#60caedbea2b30ec860338b70c189171fdbb5dc74" class="src_link" title="lib/blackjack/player.rb">lib/blackjack/player.rb</a></td>
-        <td class="red strong">80.0 %</td>
+        <td class="green strong">100.0 %</td>
         <td>61</td>
         <td>35</td>
-        <td>28</td>
-        <td>7</td>
-        <td>7.0</td>
+        <td>35</td>
+        <td>0</td>
+        <td>7.9</td>
       </tr>
       
       <tr>
@@ -114,10 +114,10 @@
         <td class="strong"><a href="#385178031d18b8e6a45b28d99ba9b1148e15c7b1" class="src_link" title="spec/blackjack/player_spec.rb">spec/blackjack/player_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>91</td>
-        <td>50</td>
-        <td>50</td>
+        <td>58</td>
+        <td>58</td>
         <td>0</td>
-        <td>2.3</td>
+        <td>2.4</td>
       </tr>
       
     </tbody>
@@ -168,8 +168,8 @@
           <code class="ruby">    def initialize(game)</code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="4">
-          <span class="hits">13</span>
+        <li class="covered" data-hits="15" data-linenumber="4">
+          <span class="hits">15</span>
           
           <code class="ruby">      @game = game</code>
         </li>
@@ -324,8 +324,8 @@
           <code class="ruby">    def initialize(game)</code>
         </li>
       
-        <li class="covered" data-hits="16" data-linenumber="4">
-          <span class="hits">16</span>
+        <li class="covered" data-hits="18" data-linenumber="4">
+          <span class="hits">18</span>
           
           <code class="ruby">      super(game)</code>
         </li>
@@ -456,32 +456,32 @@
           <code class="ruby">    def initialize</code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="6">
-          <span class="hits">13</span>
+        <li class="covered" data-hits="15" data-linenumber="6">
+          <span class="hits">15</span>
           
           <code class="ruby">      @deck = Deck.new</code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="7">
-          <span class="hits">13</span>
+        <li class="covered" data-hits="15" data-linenumber="7">
+          <span class="hits">15</span>
           
           <code class="ruby">      @deck.shuffle!</code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="8">
-          <span class="hits">13</span>
+        <li class="covered" data-hits="15" data-linenumber="8">
+          <span class="hits">15</span>
           
           <code class="ruby">      @dealer = Blackjack::Dealer.new(self)</code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="9">
-          <span class="hits">13</span>
+        <li class="covered" data-hits="15" data-linenumber="9">
+          <span class="hits">15</span>
           
           <code class="ruby">      @player = Blackjack::Player.new(self)</code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="10">
-          <span class="hits">13</span>
+        <li class="covered" data-hits="15" data-linenumber="10">
+          <span class="hits">15</span>
           
           <code class="ruby">      @board = Blackjack::Board.new(self)</code>
         </li>
@@ -829,11 +829,11 @@
         <div class="source_table" id="60caedbea2b30ec860338b70c189171fdbb5dc74">
   <div class="header">
     <h3>lib/blackjack/player.rb</h3>
-    <h4><span class="red">80.0 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>35</b> relevant lines. 
-      <span class="green"><b>28</b> lines covered</span> and
-      <span class="red"><b>7</b> lines missed.</span>
+      <span class="green"><b>35</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -870,20 +870,20 @@
           <code class="ruby">    def initialize(game)</code>
         </li>
       
-        <li class="covered" data-hits="39" data-linenumber="6">
-          <span class="hits">39</span>
+        <li class="covered" data-hits="45" data-linenumber="6">
+          <span class="hits">45</span>
           
           <code class="ruby">      @hand = Hand.new</code>
         </li>
       
-        <li class="covered" data-hits="39" data-linenumber="7">
-          <span class="hits">39</span>
+        <li class="covered" data-hits="45" data-linenumber="7">
+          <span class="hits">45</span>
           
           <code class="ruby">      @game = game</code>
         </li>
       
-        <li class="covered" data-hits="39" data-linenumber="8">
-          <span class="hits">39</span>
+        <li class="covered" data-hits="45" data-linenumber="8">
+          <span class="hits">45</span>
           
           <code class="ruby">      @stand_status = false</code>
         </li>
@@ -1074,8 +1074,8 @@
           <code class="ruby">    def hit</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="40">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="40">
+          <span class="hits">3</span>
           
           <code class="ruby">      @hand.draw(@game.deck, 1)</code>
         </li>
@@ -1098,8 +1098,8 @@
           <code class="ruby">    def stand</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="44">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="44">
+          <span class="hits">3</span>
           
           <code class="ruby">      @stand_status = true</code>
         </li>
@@ -1122,8 +1122,8 @@
           <code class="ruby">    def make_move</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="48">
-          
+        <li class="covered" data-hits="2" data-linenumber="48">
+          <span class="hits">2</span>
           
           <code class="ruby">      input = nil</code>
         </li>
@@ -1134,32 +1134,32 @@
           <code class="ruby">      # while [&quot;h&quot;, &quot;s&quot;].include?(input)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="50">
-          
+        <li class="covered" data-hits="2" data-linenumber="50">
+          <span class="hits">2</span>
           
           <code class="ruby">      while input != &quot;h&quot; || input != &quot;s&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="51">
-          
+        <li class="covered" data-hits="2" data-linenumber="51">
+          <span class="hits">2</span>
           
           <code class="ruby">        puts &quot;Press h for hit and s for stand&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="52">
-          
+        <li class="covered" data-hits="2" data-linenumber="52">
+          <span class="hits">2</span>
           
           <code class="ruby">        input = Kernel.gets.chomp.downcase.strip</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="53">
-          
+        <li class="covered" data-hits="2" data-linenumber="53">
+          <span class="hits">2</span>
           
           <code class="ruby">        if input == &quot;h&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="54">
-          
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
           
           <code class="ruby">          return hit</code>
         </li>
@@ -1170,8 +1170,8 @@
           <code class="ruby">        elsif input == &quot;s&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="56">
-          
+        <li class="covered" data-hits="1" data-linenumber="56">
+          <span class="hits">1</span>
           
           <code class="ruby">          return stand</code>
         </li>
@@ -1551,8 +1551,8 @@
     <h3>spec/blackjack/player_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>50</b> relevant lines. 
-      <span class="green"><b>50</b> lines covered</span> and
+      <b>58</b> relevant lines. 
+      <span class="green"><b>58</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1584,44 +1584,44 @@
           <code class="ruby">  before :each do</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="5">
-          <span class="hits">9</span>
+        <li class="covered" data-hits="11" data-linenumber="5">
+          <span class="hits">11</span>
           
           <code class="ruby">    @game = Blackjack::Game.new</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="6">
-          <span class="hits">9</span>
+        <li class="covered" data-hits="11" data-linenumber="6">
+          <span class="hits">11</span>
           
           <code class="ruby">    @player = Blackjack::Player.new(@game)</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="7">
-          <span class="hits">9</span>
+        <li class="covered" data-hits="11" data-linenumber="7">
+          <span class="hits">11</span>
           
           <code class="ruby">    @ace = Card.new(rank=&quot;Ace&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="8">
-          <span class="hits">9</span>
+        <li class="covered" data-hits="11" data-linenumber="8">
+          <span class="hits">11</span>
           
           <code class="ruby">    @jack = Card.new(rank=&quot;Jack&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="9">
-          <span class="hits">9</span>
+        <li class="covered" data-hits="11" data-linenumber="9">
+          <span class="hits">11</span>
           
           <code class="ruby">    @two = Card.new(rank = 2)</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="10">
-          <span class="hits">9</span>
+        <li class="covered" data-hits="11" data-linenumber="10">
+          <span class="hits">11</span>
           
           <code class="ruby">    @seven = Card.new(rank = 7)</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="11">
-          <span class="hits">9</span>
+        <li class="covered" data-hits="11" data-linenumber="11">
+          <span class="hits">11</span>
           
           <code class="ruby">    @queen = Card.new(rank = &quot;Queen&quot;)</code>
         </li>
@@ -1632,10 +1632,10 @@
           <code class="ruby">    # mock (test double, fake implementation of gets)</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="13">
-          <span class="hits">9</span>
+        <li class="covered" data-hits="12" data-linenumber="13">
+          <span class="hits">12</span>
           
-          <code class="ruby">    allow(self).to receive(:gets) {&quot;h&quot;}</code>
+          <code class="ruby">    allow(Kernel).to receive(:gets) {&quot;h&quot;}</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
@@ -2022,82 +2022,82 @@
           <code class="ruby">  # Need refactoring to make the mock work</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="78">
+        <li class="covered" data-hits="1" data-linenumber="78">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  # describe &quot;make_move&quot; do</code>
+          <code class="ruby">  describe &quot;make_move&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="79">
+        <li class="covered" data-hits="1" data-linenumber="79">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #   it &quot;hits if the player types h&quot; do</code>
+          <code class="ruby">    it &quot;hits if the player types h&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="80">
+        <li class="covered" data-hits="1" data-linenumber="80">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #     @player.make_move</code>
+          <code class="ruby">      @player.make_move</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="81">
+        <li class="covered" data-hits="1" data-linenumber="81">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #     expect(@player.hand.count).to eq 1</code>
+          <code class="ruby">      expect(@player.hand.count).to eq 1</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="82">
           
           
-          <code class="ruby">  #   end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="83">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="84">
+        <li class="covered" data-hits="1" data-linenumber="84">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #   it &quot;stands if the player types s&quot; do</code>
+          <code class="ruby">    it &quot;stands if the player types s&quot; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="85">
           
           
-          <code class="ruby">  #     # mock (test double, fake implementation of gets)</code>
+          <code class="ruby">      # mock (test double, fake implementation of gets)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="86">
+        <li class="covered" data-hits="2" data-linenumber="86">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby">  #     allow(self).to receive(:gets) {&quot;s&quot;}</code>
+          <code class="ruby">      allow(Kernel).to receive(:gets) {&quot;s&quot;}</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="87">
+        <li class="covered" data-hits="1" data-linenumber="87">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #     @player.make_move</code>
+          <code class="ruby">      @player.make_move</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="88">
+        <li class="covered" data-hits="1" data-linenumber="88">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #     expect(@player.stand_status).to be true</code>
+          <code class="ruby">      expect(@player.stand_status).to be true</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="89">
           
           
-          <code class="ruby">  #   end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="90">
           
           
-          <code class="ruby">  # end</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="91">

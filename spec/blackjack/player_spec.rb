@@ -10,7 +10,7 @@ describe Blackjack::Player do
     @seven = Card.new(rank = 7)
     @queen = Card.new(rank = "Queen")
     # mock (test double, fake implementation of gets)
-    allow(self).to receive(:gets) {"h"}
+    allow(Kernel).to receive(:gets) {"h"}
   end
 
   describe "initialize" do
@@ -75,17 +75,17 @@ describe Blackjack::Player do
   end
 
   # Need refactoring to make the mock work
-  # describe "make_move" do
-  #   it "hits if the player types h" do
-  #     @player.make_move
-  #     expect(@player.hand.count).to eq 1
-  #   end
-  #
-  #   it "stands if the player types s" do
-  #     # mock (test double, fake implementation of gets)
-  #     allow(self).to receive(:gets) {"s"}
-  #     @player.make_move
-  #     expect(@player.stand_status).to be true
-  #   end
-  # end
+  describe "make_move" do
+    it "hits if the player types h" do
+      @player.make_move
+      expect(@player.hand.count).to eq 1
+    end
+
+    it "stands if the player types s" do
+      # mock (test double, fake implementation of gets)
+      allow(Kernel).to receive(:gets) {"s"}
+      @player.make_move
+      expect(@player.stand_status).to be true
+    end
+  end
 end
