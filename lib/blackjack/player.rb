@@ -49,7 +49,7 @@ module Blackjack
       # while ["h", "s"].include?(input)
       while input != "h" || input != "s"
         puts "Press h for hit and s for stand"
-        input = Kernel.gets.chomp.downcase.strip
+        input = gets.chomp.downcase.strip
         if input == "h"
           return hit
         elsif input == "s"

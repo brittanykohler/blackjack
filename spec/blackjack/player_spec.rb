@@ -10,7 +10,7 @@ describe Blackjack::Player do
     @seven = Card.new(rank = 7)
     @queen = Card.new(rank = "Queen")
     # mock (test double, fake implementation of gets)
-    allow(Kernel).to receive(:gets) {"h"}
+    allow(@player).to receive(:gets) {"h"}
   end
 
   describe "initialize" do
@@ -83,7 +83,7 @@ describe Blackjack::Player do
 
     it "stands if the player types s" do
       # mock (test double, fake implementation of gets)
-      allow(Kernel).to receive(:gets) {"s"}
+      allow(@player).to receive(:gets) {"s"}
       @player.make_move
       expect(@player.stand_status).to be true
     end
