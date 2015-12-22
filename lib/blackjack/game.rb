@@ -25,6 +25,16 @@ module Blackjack
     end
 
     def play_game
+      loop do
+        @dealer.hand = Hand.new
+        @player.hand = Hand.new
+        do_play_game
+        puts "Do you want to play again? (y/n)"
+        break unless gets.chomp == "y"
+      end
+    end
+
+    def do_play_game
       @dealer.deal_hand(@dealer)
       @dealer.deal_hand(@player)
       @board.print_board
@@ -50,7 +60,7 @@ module Blackjack
         @dealer.make_move
         @board.print_board(true)
       end
-      return puts "The winner is: #{declare_winner}"
+      puts "The winner is: #{declare_winner}"
     end
   end
 end
