@@ -27,6 +27,7 @@ module Blackjack
     def play_game
       @dealer.deal_hand(@dealer)
       @dealer.deal_hand(@player)
+      @board.print_board
       if @dealer.blackjack? && @player.blackjack?
         @board.print_board(true)
         return puts "Both players got blackjack. What are the chances!?"
@@ -43,7 +44,7 @@ module Blackjack
       end
       if @player.bust?
         @board.print_board(true)
-        return puts "The player busted. Dealer wins." 
+        return puts "The player busted. Dealer wins."
       end
       while !@dealer.stand_status && !@dealer.bust?
         @dealer.make_move
