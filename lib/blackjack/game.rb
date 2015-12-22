@@ -28,6 +28,8 @@ module Blackjack
       loop do
         @dealer.hand = Hand.new
         @player.hand = Hand.new
+        @player.stand_status = false
+        @dealer.stand_status = false
         do_play_game
         puts "Do you want to play again? (y/n)"
         break unless gets.chomp == "y"
